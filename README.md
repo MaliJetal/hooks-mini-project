@@ -35,3 +35,9 @@
 - useRef is used for reference element inside of your `HTML`. ref element into HTML markup tags or other DOM element.
 - It allows us to store `previous` state value without rerendering again as state does.
 - It is handy for keeping any mutable value around similar to how you’d use `instance` fields in classes.
+
+## useContext():
+
+- With the context API you can specify certain pieces of data that will be available to all components nested inside the context with no need to pass this data through each component.
+- useContext we were able to `cut out all the consumer` portion of the context and remove all the complex nesting.
+- To provide context in functional based component.
