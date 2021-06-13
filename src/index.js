@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useMemo } from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import UseEffect from "./UseEffect";
+import UseMemo from "./UseMemo";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <UseMemo />
     <UseEffect />
   </React.StrictMode>,
   document.getElementById("root")

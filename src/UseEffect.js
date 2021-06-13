@@ -9,6 +9,7 @@ function UseEffect() {
     fetch(`https://jsonplaceholder.typicode.com/${resourceType}`)
       .then((response) => response.json())
       .then((json) => setItems(json));
+    console.log("Width changed");
   }, [resourceType]);
 
   const handleResize = () => {
