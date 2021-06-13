@@ -10,7 +10,7 @@ export default function UseMemo() {
 
   // const doubleNumber = slowFunction(number);
 
-  const themeStyles = useEffect(() => {
+  const themeStyles = useMemo(() => {
     return {
       backgroundColor: dark ? "black" : "white",
       color: dark ? "white" : "black",

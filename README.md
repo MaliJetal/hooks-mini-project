@@ -26,3 +26,11 @@
 - useMemo() should be used only when it is required as it requires useMemo function to call, and store the functions, variable in memory.
 - useMemo() can also be used for `referential equality`. It will create refernce of same object and compare and check if it is equal then only value change. Only changes to the reference of the object, whenever the actual contents of the object changed. Instead of updating every single time you render.
 - Note: personally, we dont use useMemo much as it acts like useEffect with input values.
+
+## useRef():
+
+- useRef returns a `mutable` ref object whose .current property is initialized to the passed argument (initialValue).
+- useRef is like a “box” that can hold a mutable value in its `.current` property.
+- useRef doesnot cause your component to reupdate when it is changed.
+- useRef is used for reference element inside of your `HTML`. ref element into HTML markup tags or other DOM element.
+- It allows us to store `previous` state value without rerendering again as state does.

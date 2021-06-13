@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import UseEffect from "./UseEffect";
+import UseRef from "./UseRef";
 import UseMemo from "./UseMemo";
 import reportWebVitals from "./reportWebVitals";
 
@@ -10,6 +11,7 @@ ReactDOM.render(
   <React.StrictMode>
     <App />
     <UseMemo />
+    <UseRef />
     <UseEffect />
   </React.StrictMode>,
   document.getElementById("root")
