@@ -34,3 +34,4 @@
 - useRef doesnot cause your component to reupdate when it is changed.
 - useRef is used for reference element inside of your `HTML`. ref element into HTML markup tags or other DOM element.
 - It allows us to store `previous` state value without rerendering again as state does.
+- It is handy for keeping any mutable value around similar to how you’d use `instance` fields in classes.

@@ -5,6 +5,8 @@ import App from "./App";
 import UseEffect from "./UseEffect";
 import UseRef from "./UseRef";
 import UseMemo from "./UseMemo";
+import UseContext from "./useContext/UseContext";
+import UseContext2 from "./useContext2/UseContext2";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
@@ -12,6 +14,8 @@ ReactDOM.render(
     <App />
     <UseMemo />
     <UseRef />
+    <UseContext />
+    <UseContext2 />
     <UseEffect />
   </React.StrictMode>,
   document.getElementById("root")
