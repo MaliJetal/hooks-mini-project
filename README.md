@@ -41,3 +41,8 @@
 - With the context API you can specify certain pieces of data that will be available to all components nested inside the context with no need to pass this data through each component.
 - useContext we were able to `cut out all the consumer` portion of the context and remove all the complex nesting.
 - To provide context in functional based component.
+
+## useReducer():
+
+- useReducer() like wise useState() is used to manage state and rerender the component whnever state changes.
+- It set states to the new version of the state using type of action.
