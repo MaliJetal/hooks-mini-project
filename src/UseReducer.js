@@ -1,12 +1,14 @@
+//import { act } from "@testing-library/react";
 import React, { useState, useReducer } from "react";
 
 import Todo from "./Todo";
 
-const ACTIONS = {
+export const ACTIONS = {
   INCREMENT: "increment",
   DECREMENT: "decrement",
   ADD_TODO: "add-Todo",
   TOGGLE_TODO: "toggle-Todo",
+  DELETE_TODO: "delete-Todo",
 };
 
 function reducer(state, action) {
@@ -18,7 +20,14 @@ function reducer(state, action) {
     case ACTIONS.ADD_TODO:
       return [...state, newTodo(action.payload.name)];
     case ACTIONS.TOGGLE_TODO:
-      break;
+      return state.map((todo) => {
+        if (todo.id === action.payload.id) {
+          return { ...todo, complete: !todo.complete };
+        }
+        return todo;
+      });
+    case ACTIONS.DELETE_TODO:
+      return state.filter((todo) => todo.id !== action.payload.id);
     default:
       return state;
   }
@@ -58,7 +67,7 @@ export default function UseReducer() {
         />
       </form>
       {todos.map((todo) => {
-        return <Todo key={todo.id} todo={todo} />;
+        return <Todo key={todo.id} todo={todo} dispatch={dispatch} />;
       })}
     </div>
   );

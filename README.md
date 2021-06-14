@@ -47,4 +47,6 @@
 - useReducer() like wise useState() is used to manage state and rerender the component whnever state changes.
 - It set states to the new version of the state using type of action.
 - useReducer() passed `initial value` as an `object`
-- It has dispatch where we can pass type and payload and reducer function can call another function to perform `fetch, payload define` etc. 
+- It has dispatch where we can pass type and payload and reducer function can call another function to perform `fetch, payload define` etc.
+- `action` contains the current state value.
+- `Arrays has filter()` method to remove any value. Check this out!
