@@ -50,3 +50,7 @@
 - It has dispatch where we can pass type and payload and reducer function can call another function to perform `fetch, payload define` etc.
 - `action` contains the current state value.
 - `Arrays has filter()` method to remove any value. Check this out!
+
+## use Callback():jkhslfdk
+
+## custom hooks
