@@ -31,7 +31,7 @@ function UseEffect() {
       <button onClick={() => setResourceType("comments")}>Comments</button>
       <h1>{resourceType}</h1>
       {items.map((item) => {
-        return <h2>{JSON.stringify(items)}</h2>;
+        return <h2>{JSON.stringify(item)}</h2>;
       })}
       <p>{windowWidth}</p>
     </div>
