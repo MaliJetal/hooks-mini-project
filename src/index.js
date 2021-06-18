@@ -8,6 +8,7 @@ import UseMemo from "./UseMemo";
 import UseContext from "./useContext/UseContext";
 import UseContext2 from "./useContext2/UseContext2";
 import UseCallback from "./useCallback/UseCallback";
+import UseCustomHook from "./useCustomHook/UseCustomHook";
 import UseReducer from "./UseReducer";
 import reportWebVitals from "./reportWebVitals";
 
@@ -20,6 +21,7 @@ ReactDOM.render(
     <UseContext2 />
     <UseReducer />
     <UseCallback />
+    <UseCustomHook />
     <UseEffect />
   </React.StrictMode>,
   document.getElementById("root")
