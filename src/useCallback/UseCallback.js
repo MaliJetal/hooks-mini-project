@@ -1,13 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import ListItems from "./ListItems";
 
 export default function UseCallback() {
   const [number, setNumber] = useState(0);
   const [dark, setDark] = useState(false);
-  const getItems = () => {
-    const list = [number, number + 1, number + 2];
-    return list;
-  };
+  const getItems = useCallback(
+    (incrementor) => {
+      const list = [
+        number + incrementor,
+        number + 1 + incrementor,
+        number + 2 + incrementor,
+      ];
+      return list;
+    },
+    [number]
+  );
 
   const theme = {
     backgroundColor: dark ? "#333" : "#FFF",
@@ -21,7 +28,7 @@ export default function UseCallback() {
         onChange={(e) => setNumber(parseInt(e.target.value))}
       />
       <div style={theme} margin="20px">
-        <button onclick={() => setDark((prevdark) => !prevdark)}>
+        <button onClick={() => setDark((prevdark) => !prevdark)}>
           Toggle Button
         </button>
       </div>

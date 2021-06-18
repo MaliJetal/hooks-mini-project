@@ -24,7 +24,7 @@
 - It is used for memoization.
 - It basically cache value so that there is no need to recompute it.
 - useMemo() should be used only when it is required as it requires useMemo function to call, and store the functions, variable in memory.
-- useMemo() can also be used for `referential equality`. It will create refernce of same object and compare and check if it is equal then only value change. Only changes to the reference of the object, whenever the actual contents of the object changed. Instead of updating every single time you render.
+- useMemo() can also be used for `referential equality`. It will create reference of same object and compare and check if it is equal then only value change. Only changes to the reference of the object, whenever the actual contents of the object changed. Instead of updating every single time you render.
 - Note: personally, we dont use useMemo much as it acts like useEffect with input values.
 
 ## useRef():
@@ -51,6 +51,12 @@
 - `action` contains the current state value.
 - `Arrays has filter()` method to remove any value. Check this out!
 
-## use Callback():jkhslfdk
+## use Callback():
 
-## custom hooks
+- It is used not to re-render component if other function/state changes.
+- It consider `referential equality` as useMemo() does.
+- If the function is reslly slow then add it in useCallback as it does not create brand new function every time.
+- It looks like `useMemo()` but useMemo only consider state value but useCallback() consider entire function.
+- useMemo returns the value of tht return statement but useCallback return the entire function
+
+## custom hooks:
