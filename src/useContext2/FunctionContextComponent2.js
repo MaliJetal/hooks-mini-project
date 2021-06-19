@@ -2,7 +2,7 @@ import React from "react";
 import { useTheme, useThemeUpdate } from "./ThemeContext";
 
 function FunctionContextComponent() {
-  const darkTheme = useTheme();
+  var darkTheme = useTheme();
   const toggleTheme = useThemeUpdate();
 
   const themeStyles = {

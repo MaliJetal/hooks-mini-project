@@ -18,6 +18,7 @@ function reducer(state, action) {
     case ACTIONS.DECREMENT:
       return { count: state.count - 1 };
     case ACTIONS.ADD_TODO:
+      console.log(state);
       return [...state, newTodo(action.payload.name)];
     case ACTIONS.TOGGLE_TODO:
       return state.map((todo) => {
@@ -54,8 +55,6 @@ export default function UseReducer() {
     dispatch({ type: ACTIONS.ADD_TODO, payload: { name: name } });
     setName("");
   }
-
-  console.log(todos);
 
   return (
     <div>

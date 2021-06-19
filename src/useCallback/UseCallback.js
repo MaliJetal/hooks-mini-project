@@ -11,6 +11,7 @@ export default function UseCallback() {
         number + 1 + incrementor,
         number + 2 + incrementor,
       ];
+      console.log(list);
       return list;
     },
     [number]
