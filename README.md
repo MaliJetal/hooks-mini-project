@@ -70,3 +70,5 @@
 - useMemo returns the value of thta return statement but useCallback return the entire function
 
 ## custom hooks:
+
+- It is created using useContext().
