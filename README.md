@@ -1,5 +1,11 @@
 # React Hooks Mini Project...
 
+- React hooks helps us to use State and other react feature without writing a class
+
+### Why hooks?
+
+- In functional component we have no `this` keyword.
+
 ## useSate():
 
 - useState used to set values and used in components and any other components just like states.
@@ -11,6 +17,7 @@
 
 ## useEffect():
 
+- useEffect allows us to introduce side effects to the component.
 - useEffect used to call API's and do logic whenever state/props/variable changes.
 - useEffect is a function which allows to pass and return states
 - useEffect can be used as componentDidMount and componentUnmount
@@ -24,6 +31,7 @@
 - It basically cache value so that there is no need to recompute it.
 - useMemo() should be used only when it is required, and store the functions, variable in memory.
 - useMemo() can also be used for `referential equality`. It will create reference of same object and compare and check if it is equal then only value change. Only changes to the reference of the object, whenever the actual contents of the object changed. Instead of updating every single time you render.
+- [{name:"Jetal",rollno:"21"}]
 
 ## useRef():
 
@@ -34,11 +42,15 @@
 - It allows us to store `previous` state value without rerendering again as state does.
 - It is handy for keeping any mutable value around similar to how you’d use `instance` fields in classes.
 
+- useRef() vs useState()
+  useState() causes re-render, useRef does not.
+
 ## useContext():
 
 - With the context API you can specify certain pieces of data that will be available to all components nested inside the context with no need to pass this data through each component.
 - useContext we were able to `cut out all the consumer` portion of the context and remove all the complex nesting.
 - To provide context in functional based component.
+- `consume the parent props`
 
 ## useReducer():
 
